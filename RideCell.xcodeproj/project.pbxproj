@@ -9,13 +9,25 @@
 /* Begin PBXBuildFile section */
 		B91C1C9127BFFD9A00C93E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1C9027BFFD9A00C93E58 /* AppDelegate.swift */; };
 		B91C1C9327BFFD9A00C93E58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1C9227BFFD9A00C93E58 /* SceneDelegate.swift */; };
-		B91C1C9527BFFD9A00C93E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1C9427BFFD9A00C93E58 /* ViewController.swift */; };
+		B91C1C9527BFFD9A00C93E58 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1C9427BFFD9A00C93E58 /* MapViewController.swift */; };
 		B91C1C9827BFFD9A00C93E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91C1C9627BFFD9A00C93E58 /* Main.storyboard */; };
 		B91C1C9A27BFFD9D00C93E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91C1C9927BFFD9D00C93E58 /* Assets.xcassets */; };
 		B91C1C9D27BFFD9D00C93E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91C1C9B27BFFD9D00C93E58 /* LaunchScreen.storyboard */; };
 		B91C1CA827BFFD9D00C93E58 /* RideCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CA727BFFD9D00C93E58 /* RideCellTests.swift */; };
 		B91C1CB227BFFD9D00C93E58 /* RideCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CB127BFFD9D00C93E58 /* RideCellUITests.swift */; };
 		B91C1CB427BFFD9D00C93E58 /* RideCellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CB327BFFD9D00C93E58 /* RideCellUITestsLaunchTests.swift */; };
+		B91C1CC627C0DB6C00C93E58 /* CarsCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CC527C0DB6C00C93E58 /* CarsCollectionViewModel.swift */; };
+		B91C1CC927C0DCC100C93E58 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CC827C0DCC100C93E58 /* PickerView.swift */; };
+		B91C1CCC27C0DDEB00C93E58 /* CarsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CCA27C0DDEB00C93E58 /* CarsCollectionViewCell.swift */; };
+		B91C1CCD27C0DDEB00C93E58 /* CarsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91C1CCB27C0DDEB00C93E58 /* CarsCollectionViewCell.xib */; };
+		B91C1CCF27C0E47C00C93E58 /* CarDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CCE27C0E47B00C93E58 /* CarDetail.swift */; };
+		B91C1CD127C0E7E000C93E58 /* CellIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CD027C0E7E000C93E58 /* CellIdentifiable.swift */; };
+		B91C1CD627C1203800C93E58 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91C1CD427C1203700C93E58 /* MarkerInfoView.xib */; };
+		B91C1CD727C1203800C93E58 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CD527C1203800C93E58 /* MarkerInfoView.swift */; };
+		B91C1CDA27C12BD100C93E58 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = B91C1CD927C12BD100C93E58 /* AlamofireImage */; };
+		B91C1CDC27C1344C00C93E58 /* CarAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CDB27C1344C00C93E58 /* CarAnnotationView.swift */; };
+		B91C1CDE27C1346200C93E58 /* CarAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CDD27C1346200C93E58 /* CarAnnotation.swift */; };
+		B91C1CE127C1348C00C93E58 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91C1CE027C1348C00C93E58 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +51,7 @@
 		B91C1C8D27BFFD9A00C93E58 /* RideCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91C1C9027BFFD9A00C93E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B91C1C9227BFFD9A00C93E58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B91C1C9427BFFD9A00C93E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B91C1C9427BFFD9A00C93E58 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B91C1C9727BFFD9A00C93E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B91C1C9927BFFD9D00C93E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B91C1C9C27BFFD9D00C93E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,17 @@
 		B91C1CAD27BFFD9D00C93E58 /* RideCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91C1CB127BFFD9D00C93E58 /* RideCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCellUITests.swift; sourceTree = "<group>"; };
 		B91C1CB327BFFD9D00C93E58 /* RideCellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B91C1CC527C0DB6C00C93E58 /* CarsCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewModel.swift; sourceTree = "<group>"; };
+		B91C1CC827C0DCC100C93E58 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		B91C1CCA27C0DDEB00C93E58 /* CarsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B91C1CCB27C0DDEB00C93E58 /* CarsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsCollectionViewCell.xib; sourceTree = "<group>"; };
+		B91C1CCE27C0E47B00C93E58 /* CarDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetail.swift; sourceTree = "<group>"; };
+		B91C1CD027C0E7E000C93E58 /* CellIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellIdentifiable.swift; sourceTree = "<group>"; };
+		B91C1CD427C1203700C93E58 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		B91C1CD527C1203800C93E58 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		B91C1CDB27C1344C00C93E58 /* CarAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotationView.swift; sourceTree = "<group>"; };
+		B91C1CDD27C1346200C93E58 /* CarAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAnnotation.swift; sourceTree = "<group>"; };
+		B91C1CE027C1348C00C93E58 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91C1CDA27C12BD100C93E58 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +123,12 @@
 		B91C1C8F27BFFD9A00C93E58 /* RideCell */ = {
 			isa = PBXGroup;
 			children = (
+				B91C1CDF27C1347B00C93E58 /* Extensions */,
+				B91C1CC427C0DB3800C93E58 /* Model */,
+				B91C1CC327C0DB2E00C93E58 /* ViewModel */,
+				B91C1CC227C0DB2800C93E58 /* View */,
 				B91C1C9027BFFD9A00C93E58 /* AppDelegate.swift */,
 				B91C1C9227BFFD9A00C93E58 /* SceneDelegate.swift */,
-				B91C1C9427BFFD9A00C93E58 /* ViewController.swift */,
 				B91C1C9627BFFD9A00C93E58 /* Main.storyboard */,
 				B91C1C9927BFFD9D00C93E58 /* Assets.xcassets */,
 				B91C1C9B27BFFD9D00C93E58 /* LaunchScreen.storyboard */,
@@ -127,6 +154,54 @@
 			path = RideCellUITests;
 			sourceTree = "<group>";
 		};
+		B91C1CC227C0DB2800C93E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B91C1CC727C0DCA200C93E58 /* Common */,
+				B91C1C9427BFFD9A00C93E58 /* MapViewController.swift */,
+				B91C1CCA27C0DDEB00C93E58 /* CarsCollectionViewCell.swift */,
+				B91C1CCB27C0DDEB00C93E58 /* CarsCollectionViewCell.xib */,
+				B91C1CD527C1203800C93E58 /* MarkerInfoView.swift */,
+				B91C1CD427C1203700C93E58 /* MarkerInfoView.xib */,
+				B91C1CDD27C1346200C93E58 /* CarAnnotation.swift */,
+				B91C1CDB27C1344C00C93E58 /* CarAnnotationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B91C1CC327C0DB2E00C93E58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B91C1CC527C0DB6C00C93E58 /* CarsCollectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B91C1CC427C0DB3800C93E58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B91C1CCE27C0E47B00C93E58 /* CarDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B91C1CC727C0DCA200C93E58 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B91C1CD027C0E7E000C93E58 /* CellIdentifiable.swift */,
+				B91C1CC827C0DCC100C93E58 /* PickerView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B91C1CDF27C1347B00C93E58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B91C1CE027C1348C00C93E58 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +218,9 @@
 			dependencies = (
 			);
 			name = RideCell;
+			packageProductDependencies = (
+				B91C1CD927C12BD100C93E58 /* AlamofireImage */,
+			);
 			productName = RideCell;
 			productReference = B91C1C8D27BFFD9A00C93E58 /* RideCell.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +293,9 @@
 				Base,
 			);
 			mainGroup = B91C1C8427BFFD9A00C93E58;
+			packageReferences = (
+				B91C1CD827C12BD100C93E58 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = B91C1C8E27BFFD9A00C93E58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +314,9 @@
 			files = (
 				B91C1C9D27BFFD9D00C93E58 /* LaunchScreen.storyboard in Resources */,
 				B91C1C9A27BFFD9D00C93E58 /* Assets.xcassets in Resources */,
+				B91C1CD627C1203800C93E58 /* MarkerInfoView.xib in Resources */,
 				B91C1C9827BFFD9A00C93E58 /* Main.storyboard in Resources */,
+				B91C1CCD27C0DDEB00C93E58 /* CarsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91C1C9527BFFD9A00C93E58 /* ViewController.swift in Sources */,
+				B91C1CD727C1203800C93E58 /* MarkerInfoView.swift in Sources */,
+				B91C1C9527BFFD9A00C93E58 /* MapViewController.swift in Sources */,
+				B91C1CD127C0E7E000C93E58 /* CellIdentifiable.swift in Sources */,
+				B91C1CDE27C1346200C93E58 /* CarAnnotation.swift in Sources */,
+				B91C1CE127C1348C00C93E58 /* UIView.swift in Sources */,
+				B91C1CC627C0DB6C00C93E58 /* CarsCollectionViewModel.swift in Sources */,
 				B91C1C9127BFFD9A00C93E58 /* AppDelegate.swift in Sources */,
+				B91C1CC927C0DCC100C93E58 /* PickerView.swift in Sources */,
+				B91C1CDC27C1344C00C93E58 /* CarAnnotationView.swift in Sources */,
 				B91C1C9327BFFD9A00C93E58 /* SceneDelegate.swift in Sources */,
+				B91C1CCC27C0DDEB00C93E58 /* CarsCollectionViewCell.swift in Sources */,
+				B91C1CCF27C0E47C00C93E58 /* CarDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +690,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B91C1CD827C12BD100C93E58 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B91C1CD927C12BD100C93E58 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B91C1CD827C12BD100C93E58 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B91C1C8527BFFD9A00C93E58 /* Project object */;
 }

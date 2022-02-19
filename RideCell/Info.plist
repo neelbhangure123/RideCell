@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app needs your location access for booking cabs</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app needs your location access for booking cabs</string>
 </dict>
 </plist>

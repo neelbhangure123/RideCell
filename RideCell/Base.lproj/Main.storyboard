@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="RideCell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nba-nQ-GM7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="588"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjF-lb-wWO">
+                                <rect key="frame" x="0.0" y="632" width="414" height="230"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-Ri-2bQ">
+                                        <rect key="frame" x="0.0" y="92" width="414" height="138"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuM-bv-n3N">
+                                        <rect key="frame" x="10" y="180" width="394" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="LaA-3D-SBc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reserve This Car">
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eew-Td-B99" customClass="AKPickerView" customModule="RideCell" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="YBg-ra-7KI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0eE-Ri-2bQ" firstAttribute="leading" secondItem="sjF-lb-wWO" secondAttribute="leading" id="5qE-f5-UrY"/>
+                                    <constraint firstAttribute="bottom" secondItem="IuM-bv-n3N" secondAttribute="bottom" constant="10" id="Emv-cm-GnY"/>
+                                    <constraint firstAttribute="trailing" secondItem="eew-Td-B99" secondAttribute="trailing" id="IA4-H1-7fT"/>
+                                    <constraint firstItem="eew-Td-B99" firstAttribute="top" secondItem="sjF-lb-wWO" secondAttribute="top" id="N56-BT-PJk"/>
+                                    <constraint firstItem="IuM-bv-n3N" firstAttribute="centerX" secondItem="sjF-lb-wWO" secondAttribute="centerX" id="PQO-su-SEy"/>
+                                    <constraint firstAttribute="trailing" secondItem="IuM-bv-n3N" secondAttribute="trailing" constant="10" id="PWB-g5-jUr"/>
+                                    <constraint firstAttribute="bottom" secondItem="0eE-Ri-2bQ" secondAttribute="bottom" id="SpA-TC-t1c"/>
+                                    <constraint firstAttribute="trailing" secondItem="0eE-Ri-2bQ" secondAttribute="trailing" id="TSZ-eS-oem"/>
+                                    <constraint firstItem="0eE-Ri-2bQ" firstAttribute="height" secondItem="sjF-lb-wWO" secondAttribute="height" multiplier="6:10" id="lfo-t2-qwL"/>
+                                    <constraint firstItem="eew-Td-B99" firstAttribute="leading" secondItem="sjF-lb-wWO" secondAttribute="leading" id="tJH-sk-qeX"/>
+                                    <constraint firstItem="IuM-bv-n3N" firstAttribute="top" secondItem="eew-Td-B99" secondAttribute="bottom" constant="10" id="xZA-5Q-Cqd"/>
+                                    <constraint firstItem="IuM-bv-n3N" firstAttribute="leading" secondItem="sjF-lb-wWO" secondAttribute="leading" constant="10" id="xoi-Rk-Myg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sjF-lb-wWO" firstAttribute="top" secondItem="nba-nQ-GM7" secondAttribute="bottom" id="4el-m0-fHX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sjF-lb-wWO" secondAttribute="bottom" id="8fW-KP-hON"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nba-nQ-GM7" secondAttribute="trailing" id="KPJ-CV-rKU"/>
+                            <constraint firstItem="nba-nQ-GM7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NAh-aB-SqX"/>
+                            <constraint firstItem="sjF-lb-wWO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d9h-WR-zNY"/>
+                            <constraint firstItem="nba-nQ-GM7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lCw-AG-lk4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sjF-lb-wWO" secondAttribute="trailing" id="wSR-nT-gAJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bookCarButton" destination="IuM-bv-n3N" id="UJm-Pc-OtQ"/>
+                        <outlet property="carsPickerView" destination="eew-Td-B99" id="fmN-B9-G3b"/>
+                        <outlet property="gradientView" destination="0eE-Ri-2bQ" id="xFa-TF-qnV"/>
+                        <outlet property="mapView" destination="nba-nQ-GM7" id="bAb-0a-Xxe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
